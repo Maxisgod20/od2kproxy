@@ -1,12 +1,14 @@
-Open Data Proxy
-===============
+# Open Data Tweede Kamer Proxy
 
-Usage:
-------
+To use the Tweede Kamer Open Data API, you need to whitelist your IP on [Open Data Portaal](https://opendata.tweedekamer.nl/).
+Only the white listed IP is able to access the API.
+This proxy helps developers to access the API rom anywhere through their whitelisted IP.
 
-Add a settings.json to the same directory as your executable with the following settings:
+## Usage
 
-json```
+1. Add a settings.json to the same directory as your executable with the following settings:
+
+```json
 {
     "http_timeout": 30,
     "http_port": "80",
@@ -15,23 +17,35 @@ json```
 }
 ```
 
-Installing:
------------
+2. Compile for your specific platform. Linux AMD64 and OSX are included in the makefile.
+
+```bash
+make osx
+make linux64
+```
+
+3. Run the executable
+
+```bash
+./build/od2kproxy
+```
+
+## Installing:
 
 Dependencies are installed using Glide.
 
-bash```
+```bash
 glide init
 make install or glide up
 ```
 
 
-Tests
------
+## Tests
 
-bash```
+```bash
 make tests
 ```
 
+## References
 
-https://opendata.tweedekamer.nl/system/files/documentation/open_data_portaal_api_beschrijvingen.pdf
+[Open Data Tweedekamer API documentation](https://opendata.tweedekamer.nl/system/files/documentation/open_data_portaal_api_beschrijvingen.pdf)
