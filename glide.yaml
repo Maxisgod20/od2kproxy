@@ -1,0 +1,9 @@
+package: od2kproxy
+import:
+- package: github.com/spf13/viper
+  version: df7314a14e26fea5443bb6e696b207d14d9a266d
+testImport:
+- package: github.com/stretchr/testify
+  version: 05e8a0eda380579888eb53c394909df027f06991
+  subpackages:
+  - assert

@@ -1,0 +1,5 @@
+local
+main
+vendor/
+build/
+settings.json
