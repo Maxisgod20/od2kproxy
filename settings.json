@@ -1,0 +1,7 @@
+"http_timeout": 30,
+    "http_port": "80",
+    "username": "email",
+    "password": "password"
+make osx
+make linux64
+./build/od2kproxy
